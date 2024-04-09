@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester City - Contact us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../Images/download.png" type="image/x-icon">
+</head>
+<body>
+    <nav id="home">
+        <div class="navContainer"><div class="logo"><img src="../Images/download.png" alt=""></div><h1>Contact Us</h1></div>
+        <div class="links">
+            <a href="../index.html">Home</a>
+            <div class="dropDown">
+                <a href="../About Us/index.html">About Us</a>
+                <div class="subLinks">
+                    <a href="../About Us/index.html#squadList">Squad List</a>
+                    <a href="../About Us/index.html#fixtures">Fixtures</a>
+                    <a href="../About Us/index.html#prem">Premier Leagues</a>
+                    <a href="../About Us/index.html#champs">Champions Leagues</a>
+                    <a href="../About Us/index.html#signings">Signings</a>    
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="../News/index.html">News</a>
+                <div class="subLinks">
+                    <a href="../News/index.html#recentNews">Recent News</a>
+                    <a href="../News/index.html#insideCity">Inside City</a>  
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="../Teams/index.html">Teams</a>
+                <div class="subLinks">
+                    <a href="../Teams/index.html#menTeam">Men's Team</a>
+                    <a href="../Teams/index.html#womenTeam">Women's Team</a>
+                    <a href="../Teams/index.html#u20Team">U-20 Team</a>    
+                </div>
+            </div>
+            <a  class="active" href="../Contact/index.html">Contact</a>
+        </div>
+        <span class="responsiveNavBtn" onclick="openSideBar()"><img style="height: 60px; width: 140px; transform: scale(.6); cursor: pointer;" src="../Images/nav.png" alt=""></span>
+    </nav>
+    <nav class="sideBar" id="sideBar">
+        <span class="exitBtn" onclick="closeSideBar()"><img style="height: 80px; width: 80px; transform: scale(.4); cursor: pointer;" src="../Images/nav.png" alt=""></span>
+        <div class="responsiveLinks">
+            <a href="../index.html">Home</a>
+            <div class="dropDown">
+                <a href="../Man city Website/About Us/index.html">About Us</a>
+                <div class="subLinks">
+                    <a href="../About Us/index.html#squadList">Squad List</a>
+                    <a href="../About Us/index.html#fixtures">Fixtures</a>
+                    <a href="../About Us/index.html#prem">Premier Leagues</a>
+                    <a href="../About Us/index.html#champs">Champions Leagues</a>
+                    <a href="../About Us/index.html#signings">Signings</a>    
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="../News/index.html">News</a>
+                <div class="subLinks">
+                    <a href="../News/index.html#recentNews">Recent News</a>
+                    <a href="../News/index.html#insideCity">Inside City</a>  
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="../Teams/index.html">Teams</a>
+                <div class="subLinks">
+                    <a href="../Teams/index.html#menTeam">Men's Team</a>
+                    <a href="../Teams/index.html#womenTeam">Women's Team</a>
+                    <a href="../Teams/index.html#u20Team">U-20 Team</a>    
+                </div>
+            </div>
+            <a class="active" href="../Contact/index.html">Contact</a>
+    </nav>
+    <section class="sub-header">
+        <h1>Contact Us</h1>
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126868.33593156621!2d7.430231673323445!3d6.440831944633656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a3cf887d1a25%3A0x9e342e82908e0c3d!2sEnugu!5e0!3m2!1sen!2sng!4v1689022058727!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <in class="fa fa-home"><img class="img " src="../Images/home.png" alt=""></i>
+                    <span>
+                        <h5>Etihad Stadium</h5>
+                        <p>Manchester, United Kingdom</p>
+                    </span>
+                </div>
+                <div>
+                    <in class="fa fa-phone"><img class="img" src="../Images/phone.png" alt=""></i>
+                    <span>
+                        <h5>+123 00-13-34-7900</h5>
+                        <p>We are here anytime, anyday</p>
+                    </span>
+                </div>
+                <div>
+                    <in class="fa fa-envelope"><img class="img" src="../Images/mail.png" alt=""></i>
+                    <span>
+                        <h5>info@manchestercity.co.uk</h5>
+                        <p>Email us about you</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col-b">
+                <form action="contact.php" method="post">
+                    <input type="text"  name="name" placeholder="Enter Your Name" requirged>
+                    <input type="email" name="email" placeholder="Enter Your E-mail Address" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h4>Contact Us</h4>
+        <p>Visit us today</p>
+        <div class="icons">
+            <i class="fa fa-facebook"><img class="img" src="../Images/F book.jfif" alt=""></i>
+            <i class="fa fa- fa-twitter"><img class="img" src="../Images/tweet.png"  alt=""></i>
+            <i class="fa fa-instagram"><img class="img" src="../Images/ig.jfif" alt=""></i>
+            <i class="fa fa-linkedin"><img class="img" src="../Images/linkend.png" alt=""></i>
+        </div>
+    </section>
+    <script>
+        let sideBar = document.getElementById("sideBar");
+
+function openSideBar() {
+    sideBar.style.right = "0";
+}
+function closeSideBar() {
+    sideBar.style.right = "-60%";
+}
+    </script>
+</body>
+</html>

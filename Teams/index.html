@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester City - Teams</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../Images/download.png" type="image/x-icon">
+</head>
+<body>
+    <nav id="home">
+        <div class="navContainer"><div class="logo"><img src="../Images/download.png" alt=""></div><h1>Our Teams</h1></div>
+        <div class="links">
+            <a href="../index.html">Home</a>
+            <div class="dropDown">
+                <a href="../About Us/index.html">About Us</a>
+                <div class="subLinks">
+                    <a href="../About Us/index.html#squadList">Squad List</a>
+                    <a href="../About Us/index.html#fixtures">Fixtures</a>
+                    <a href="../About Us/index.html#prem">Premier Leagues</a>
+                    <a href="../About Us/index.html#champs">Champions Leagues</a>
+                    <a href="../About Us/index.html#signings">Signings</a>    
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="../News/index.html">News</a>
+                <div class="subLinks">
+                    <a href="../News/index.html#recentNews">Recent News</a>
+                    <a href="../News/index.html#insideCity">Inside City</a>  
+                </div>
+            </div>
+            <div class="dropDown">
+                <a class="active" href="../Teams/index.html">Teams</a>
+                <div class="subLinks">
+                    <a href="../Teams/index.html#menTeam">Men's Team</a>
+                    <a href="../Teams/index.html#womenTeam">Women's Team</a>
+                    <a href="../Teams/index.html#u20Team">U-20 Team</a>    
+                </div>
+            </div>
+            <a href="../Contact/index.html">Contact</a>
+        </div>
+        <span class="responsiveNavBtn" onclick="openSideBar()"><img style="height: 80px; width: 140px; transform: scale(.6); cursor: pointer;" src="../Images/nav.png" alt=""></span>
+    </nav>
+    <nav class="sideBar" id="sideBar">
+        <span class="exitBtn" onclick="closeSideBar()"><img style="height: 80px; width: 80px; transform: scale(.4); cursor: pointer;" src="../Images/nav.png" alt=""></span>
+        <div class="responsiveLinks">
+            <a href="../index.html">Home</a>
+            <div class="dropDown">
+                <a href="../Man city Website/About Us/index.html">About Us</a>
+                <div class="subLinks">
+                    <a href="../About Us/index.html#squadList">Squad List</a>
+                    <a href="../About Us/index.html#fixtures">Fixtures</a>
+                    <a href="../About Us/index.html#prem">Premier Leagues</a>
+                    <a href="../About Us/index.html#champs">Champions Leagues</a>
+                    <a href="../About Us/index.html#signings">Signings</a>    
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="../News/index.html">News</a>
+                <div class="subLinks">
+                    <a href="../News/index.html#recentNews">Recent News</a>
+                    <a href="../News/index.html#insideCity">Inside City</a>  
+                </div>
+            </div>
+            <div class="dropDown">
+                <a class="active" href="../Teams/index.html">Teams</a>
+                <div class="subLinks">
+                    <a href="../Teams/index.html#menTeam">Men's Team</a>
+                    <a href="../Teams/index.html#womenTeam">Women's Team</a>
+                    <a href="../Teams/index.html#u20Team">U-20 Team</a>    
+                </div>
+            </div>
+            <a href="../Contact/index.html">Contact</a>
+    </nav>
+    <section class="teams">
+        <div class="imgBox">
+            <img src="../Images/wp1.jpg" alt="">
+            <div class="innerImgBox">
+                <p>We are Manchester City</p>
+            </div>
+        </div>
+        <div class="textBox">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consequuntur, libero illum perspiciatis, sunt, optio error asperiores vel nesciunt dicta tenetur facilis! Ipsam aut, adipisci laboriosam itaque nam ducimus odio!
+        </div>
+    </section>
+    <section class="allLinks">
+        <h1>Quick Links</h1>
+        <div class="innerLinks">
+            <a href="">
+                <div class="linkBox" id="menTeam">
+                    <img src="../Images/wp8.webp" alt="">
+                    <div class="innerLinkBox">
+                        <h1>Men's Team</h1>
+                    </div>
+                </div>
+            </a>`
+            <a href="">
+                <div class="linkBox" id="womenTeam">
+                    <img src="../Images/wp2.png" alt="">
+                    <div class="innerLinkBox">
+                        <h1>Women's Team</h1>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="linkBox" id="u20Team">
+                    <img src="../Images/wp1.jpg" alt="">
+                    <div class="innerLinkBox">
+                        <h1>U-20 Team</h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="footer">
+        <h4>Our Teams</h4>
+        <p>Visit us today</p>
+        <div class="icons">
+            <i class="fa fa-facebook"><img class="img" src="../Images/F book.jfif" alt=""></i>
+            <i class="fa fa- fa-twitter"><img class="img" src="../Images/tweet.png"  alt=""></i>
+            <i class="fa fa-instagram"><img class="img" src="../Images/ig.jfif" alt=""></i>
+            <i class="fa fa-linkedin"><img class="img" src="../Images/linkend.png" alt=""></i>
+        </div>
+    </section>
+    <script>
+        let sideBar = document.getElementById("sideBar");
+
+function openSideBar() {
+    sideBar.style.right = "0";
+}
+function closeSideBar() {
+    sideBar.style.right = "-60%";
+}
+    </script>
+</body>
+</html>
