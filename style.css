@@ -89,18 +89,13 @@ body{
     z-index: 100;
     display: flex;
     flex-direction: column;
-    background: darkslategrey;
+    /* background: darkslategrey; */
+    background: transparent;
+    backdrop-filter: blur(90px);
     transition: .3s ease-in-out;
     overflow: hidden;
+    box-shadow: 0 0 5px gray;
 } 
-.exitBtn{
-    display: block;
-    position: relative;
-    top: 0;
-    right: 0;
-    margin: 0 .1em;
-    margin-left: 8.5em;
-}
 .responsiveLinks{
     display: flex;
     text-decoration: none;
@@ -395,7 +390,13 @@ body{
     cursor: pointer;
 }
 .responsiveNavBtn{
-    display: none   ;
+    display: none;
+    box-shadow: 0 0 0 5px rgb(161, 161, 161, .3);
+    margin-right: 3em;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 @keyframes zoomIn {
     0%{
@@ -406,7 +407,7 @@ body{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     *{
         overflow-x: hidden;
     }
@@ -417,10 +418,11 @@ body{
         display: none;
     }
     .responsiveNavBtn{
-        display: block;
+        display: flex;
     }
     .home{
         transform: scale(.9);
+        overflow: hidden;
     }
     .textBox{
         transform: scale(.7);
@@ -474,22 +476,18 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .aboutBoxText:hover{
         background: rgba(0, 0, 0, .7);
     }
     .aboutBoxText p{
         width: 100%;
         font-weight: 500;
         color: #fff;
-        bottom: 0;
+        /* bottom: 0; */
         font-size: 20px;
         position: absolute;
-        opacity: 0;
+        /* opacity: 0; */
         transition: 0.5s;
         text-align: center;
-    }
-    .aboutBox:hover p{
         bottom: 30%;
         opacity: .9;
     }
@@ -508,6 +506,14 @@ body{
     .citizensBox img{
         width: 100%;
         height: 100%;
+    }
+    .about h1{
+        text-align: left;
+        color: rgb(49, 0, 95);
+        margin-right: 40em;
+        margin-top: 2em;
+        margin-bottom: 1em;  
+        overflow: hidden;
     }
 }
 /* @keyframes changeBg {

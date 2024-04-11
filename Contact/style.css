@@ -199,6 +199,15 @@ nav{
 }
 .responsiveNavBtn{
     display: none;
+    box-shadow: 0 0 0 5px rgb(161, 161, 161, .3);
+    margin-right: 3em;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: .1em;
+    margin: .3em;
+    margin-top: 1em;
 }
 .sideBar{
     width: 60%;
@@ -209,17 +218,16 @@ nav{
     z-index: 100;
     display: none;
     flex-direction: column;
-    background: darkslategrey;
+    background: transparent;
+    backdrop-filter: blur(90px);
     transition: .3s ease-in-out;
     overflow: hidden;
+    box-shadow: 0 0 5px gray;
 } 
 .exitBtn{
-    display: block;
-    position: relative;
+    position: absolute;
     top: 0;
-    right: 0;
-    margin: 0 .1em;
-    margin-left: 8.5em;
+    left: 0;
 }
 .responsiveLinks{
     display: flex;
@@ -227,7 +235,7 @@ nav{
     flex-direction: column;
     height: 90%;
     width: 100%;
-    margin: 0;
+    margin: 4em;
 }
 .responsiveLinks a{
     width: 90%;
@@ -242,16 +250,12 @@ nav{
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     body{
         overflow-x: hidden;
     }
     nav{
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0;
+        padding: .1em 0;
     }
     .sub-header{
         transform: scale(.9);
@@ -264,13 +268,17 @@ nav{
         display: none;
     }
     .responsiveNavBtn{
-        display: block;
+        display: flex;
     }
     .sideBar{
         display: flex;
     }
     .navContainer{
         gap: 1em;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
     }
     .home{
         transform: scale(.9);
@@ -335,16 +343,12 @@ nav{
         width: 100%;
         font-weight: 500;
         color: #fff;
-        bottom: 0;
+        bottom: 30%;
         font-size: 20px;
         position: absolute;
-        opacity: 0;
+        opacity: 1;
         transition: 0.5s;
         text-align: center;
-    }
-    .aboutBox:hover p{
-        bottom: 30%;
-        opacity: .9;
     }
     .citizens{
         height: 190vh;

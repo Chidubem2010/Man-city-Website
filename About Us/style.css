@@ -100,17 +100,16 @@ nav{
     z-index: 100;
     display: none;
     flex-direction: column;
-    background: darkslategrey;
+    background: transparent;
+    backdrop-filter: blur(90px);
     transition: .3s ease-in-out;
     overflow: hidden;
+    box-shadow: 0 0 5px gray;
 } 
 .exitBtn{
-    display: block;
-    position: relative;
+    position: absolute;
     top: 0;
-    right: 0;
-    margin: 0 .1em;
-    margin-left: 8.5em;
+    left: 0;
 }
 .responsiveLinks{
     display: flex;
@@ -118,7 +117,7 @@ nav{
     flex-direction: column;
     height: 90%;
     width: 100%;
-    margin: 0;
+    margin: 4em;
 }
 .responsiveLinks a{
     width: 90%;
@@ -292,11 +291,24 @@ nav{
     cursor: pointer;
 }
 /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2); */
+.responsiveNavBtn{
+    display: none;
+    box-shadow: 0 0 0 5px rgb(161, 161, 161, .3);
+    margin-right: 3em;
+    cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: 0 .2em;
+}
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     *{
         overflow-x: hidden;
     }
+    #home{
+            padding: 1em .5em;
+        }
     nav{
         padding: 0;
     }
@@ -307,7 +319,7 @@ nav{
         display: none;
     }
     .responsiveNavBtn{
-        display: block;
+        display: flex;
     }
     .sideBar{
         display: flex;
@@ -319,7 +331,7 @@ nav{
         transform: scale(.7);
     }
     .about{
-        height: 190vh;
+        height: 200vh;
         overflow: hidden;
     }
     .innerAbout{
@@ -334,6 +346,10 @@ nav{
         margin: -5em 0;
         /* padding: 0 10em;      */
         overflow: hidden;
+    }
+    .subLinks{
+        display: none;
+        transform: scale(0);
     }
     .aboutBox{
         height: 100%;
@@ -375,17 +391,19 @@ nav{
         width: 100%;
         font-weight: 500;
         color: #fff;
-        bottom: 0;
+        /* bottom: 0; */
         font-size: 20px;
         position: absolute;
-        opacity: 0;
+        /* opacity: 0; */
         transition: 0.5s;
         text-align: center;
+        bottom: 30%;
+        opacity: 1;
     }
-    .aboutBox:hover p{
+    /* .aboutBox:hover p{
         bottom: 30%;
         opacity: .9;
-    }
+    } */
     .citizens{
         height: 190vh;
         overflow: hidden;
@@ -424,12 +442,64 @@ nav{
         /* transform: scaleX(.3 5); */
     }
     .allLinks{
-        height: 290vh;
+        height: 318vh;
     }
     .innerLinks{
         display: flex;
         flex-direction: column;
     }
+    .footer{
+        margin-top: -3em;
+    }
+    .linkBox{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        flex-basis: 32%;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: .5s ease-in-out;
+    }
+    .linkBox img{
+        width: 100%;
+        height: 15em;
+        display: block;
+        transition: .5s ease-in-out;
+    }
+    .linkBox:hover img{
+        transform: scale(1.1);
+    }
+    .innerLinkBox{
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s ease-in-out;
+        background: rgba(0, 0, 0, .7);
+    }
+    .innerLinkBox h1{
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        bottom: 45%;
+        font-size: 20px;
+        position: absolute;
+        opacity: 1;
+        transition: 0.5s;
+        text-align: center;
+    }
+    /* .linkBox:hover h1{
+        bottom: 45%;
+        opacity: .9;
+    } */
 }
 
 
