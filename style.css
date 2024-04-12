@@ -515,6 +515,33 @@ body{
         margin-bottom: 1em;  
         overflow: hidden;
     }
+    .innerCitizensTextBox{
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, .7);
+    }
+    .innerCitizensTextBox:hover{
+        background: rgba(0, 0, 0, .7);
+    }
+    .innerCitizensTextBox p{
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        bottom: 1%;
+        font-size: 20px;
+        position: absolute;
+        opacity: 1;
+        transition: 0.5s;
+        text-align: left;
+    }
 }
 /* @keyframes changeBg {
     0%{

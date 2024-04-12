@@ -280,6 +280,9 @@ nav{
         top: 0;
         left: 0;
     }
+    .dropDown{
+        display: none;
+    }
     .home{
         transform: scale(.9);
     }
